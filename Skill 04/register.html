@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<body style="font-family:Arial;">
+
+<h2>Student Registration Form</h2>
+
+<!-- FIXED: method changed to GET (safe for offline use) -->
+<form action="submit.html" method="GET" enctype="multipart/form-data" target="rightFrame">
+    
+    Full Name: <br>
+    <input type="text" name="fullname" required><br><br>
+
+    Email: <br>
+    <input type="email" name="email" required><br><br>
+
+    Age (18–30): <br>
+    <input type="number" name="age" min="18" max="30" required><br><br>
+
+    Gender:<br>
+    <input type="radio" name="gender" value="Male"> Male
+    <input type="radio" name="gender" value="Female"> Female
+    <input type="radio" name="gender" value="Other"> Other
+    <br><br>
+
+    Course:<br>
+    <select name="course">
+        <option>B.Tech</option>
+        <option>B.Sc</option>
+        <option>B.Com</option>
+        <option>MBA</option>
+    </select>
+    <br><br>
+
+    Remarks:<br>
+    <textarea rows="4" cols="30"></textarea><br><br>
+
+    Upload Photo:<br>
+    <input type="file" name="photo"><br><br>
+
+    <input type="checkbox" required> I agree to Terms & Conditions<br><br>
+
+    <input type="submit" value="Submit">
+    <input type="reset" value="Reset">
+
+</form>
+
+</body>
+</html>
