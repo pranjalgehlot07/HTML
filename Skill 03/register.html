@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Form</title>
+</head>
+<body>
+    <h2>Student Registration</h2>
+    <form action="#" method="post" target="right">
+        <label>Full Name: </label>
+        <input type="text" name="fullname" required><br><br>
+
+        <label>Email: </label>
+        <input type="email" name="email" required><br><br>
+
+        <label>Age: </label>
+        <input type="number" name="age" min="18" max="30" required><br><br>
+
+        <label>Gender: </label>
+        <input type="radio" name="gender" value="Male"> Male
+        <input type="radio" name="gender" value="Female"> Female
+        <input type="radio" name="gender" value="Other"> Other<br><br>
+
+        <label>Course: </label>
+        <select name="course">
+            <option>B.Tech</option>
+            <option>B.Sc</option>
+            <option>B.Com</option>
+            <option>MBA</option>
+        </select><br><br>
+
+        <label>Remarks: </label><br>
+        <textarea name="remarks" rows="4" cols="40"></textarea><br><br>
+
+        <label>Profile Picture: </label>
+        <input type="file" name="profile"><br><br>
+
+        <input type="checkbox" name="terms" required> I accept the Terms & Conditions<br><br>
+
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+    </form>
+</body>
+</html>
