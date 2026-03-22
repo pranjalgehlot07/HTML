@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <xs:element name="bookings">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="booking" maxOccurs="unbounded">
+                    <xs:comaplexType>
+                        <xs:sequence>
+
+                            <xs:element name="guest" type="xs:string"/>
+                            <xs:element name="room" type="xs:positiveInteger"/>
+                            <xs:element name="checkin" type="xs:date"/>
+                            <xs:element name="checkout" type="xs:date"/>
+                            <xs:element name="adults" type="xs:nonNegativeInteger"/>
+                            <xs:element name="children" type="xs:nonNegativeInteger"/>
+
+                            <xs:element name="total">
+                                <xs:complexType>
+                                    <xs:simpleContent>
+                                        <xs:extension base="xs:decimal">
+                                            <xs:attribute name="amount" type="xs:decimal" use="required"/>
+                                            <xs:attribute name="currency">
+                                                <xs:simpleType>
+                                                    <xs:restriction base="xs:string">
+                                                        <xs:enumeration value="INR"/>
+                                                        <xs:enumeration value="USD"/>
+                                                        <xs:enumeration value="EUR"/>
+                                                    </xs:restriction>
+                                                </xs:simpleType>
+                                            </xs:attribute>
+                                        </xs:extension>
+                                    </xs:simpleContent>
+                                </xs:complexType>
+                            </xs:element>
+
+                            <xs:element name="status">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:enumeration value="confirmed"/>
+                                        <xs:enumeration value="checked-in"/>
+                                        <xs:enumeration value="checked-out"/>
+                                        <xs:enumeration value="cancelled"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+
+                            <xs:element name="services">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="service" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+
+                        </xs:sequence>
+
+                        <xs:attribute name="id" type="xs:ID" use="required"/>
+                        <xs:attribute name="source" type="xs:string"/>
+
+                        <!-- XSD 1.1 only:
+                        <xs:assert test="xs:date(checkout) >= xs:date(checkin)"/>
+                        -->
+
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+</xs:schema>

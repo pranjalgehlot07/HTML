@@ -1,0 +1,26 @@
+<!ELEMENT bookings (booking+)>
+
+<!ELEMENT booking (guest, room, checkin, checkout, adults, children, total, status, services)>
+<!ATTLIST booking
+    id ID #REQUIRED
+    source CDATA #IMPLIED
+>
+
+<!ELEMENT guest (#PCDATA)>
+<!ELEMENT room (#PCDATA)>
+<!ELEMENT checkin (#PCDATA)>
+<!ELEMENT checkout (#PCDATA)>
+<!ELEMENT adults (#PCDATA)>
+<!ELEMENT children (#PCDATA)>
+
+<!ELEMENT total (#PCDATA)>
+<!ATTLIST total
+    amount CDATA #REQUIRED
+    currency CDATA #REQUIRED
+>
+
+<!-- Allowed status values: confirmed, checked-in, checked-out, cancelled -->
+<!ELEMENT status (#PCDATA)>
+
+<!ELEMENT services (service*)>
+<!ELEMENT service (#PCDATA)>

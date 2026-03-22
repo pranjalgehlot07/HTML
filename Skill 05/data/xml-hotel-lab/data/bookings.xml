@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE bookings SYSTEM "../dtd/bookings.dtd">
+
+<bookings>
+
+    <booking id="bk1">
+        <guest>Person 1</guest>
+        <room>101</room>
+        <checkin>2025-09-15</checkin>
+        <checkout>2025-09-18</checkout>
+        <adults>2</adults>
+        <children>0</children>
+        <total amount="4500" currency="INR">4500</total>
+        <status>confirmed</status>
+        <services>
+            <service>Breakfast</service>
+            <service>Airport Pickup</service>
+        </services>
+    </booking>
+
+    <booking id="bk2">
+        <guest>Person 2</guest>
+        <room>305</room>
+        <checkin>2025-10-05</checkin>
+        <checkout>2025-10-07</checkout>
+        <adults>1</adults>
+        <children>0</children>
+        <total amount="120" currency="USD">120</total>
+        <status>checked-out</status>
+        <services>
+            <service>Breakfast</service>
+        </service/ >
+    </booking>
+
+</bookings>
