@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE feedbacks SYSTEM "hotel_feedback.dtd">
+
+<feedbacks>
+    
+    <feedback id="F001" date="2025-01-12">
+        <guest>
+            <name>Pranjal</name>
+            <email>pranjal@example.com</email>
+            <phone>9644****</phone>
+        </guest>
+        <stay>
+            <room_no>204</room_no>
+            <checkin>2025-01-10</checkin>
+            <checkout>2025-01-12</checkout>
+        </stay>
+        <ratings>
+            <cleanliness>9</cleanliness>
+            <food>8</food>
+            <service>10</service>
+            <overall>9</overall>
+        </ratings>
+        <comments>Excellent staff and very clean rooms. Highly recommended!</comments>
+    </feedback>
+    
+    <feedback id="F002" date="2025-02-02">
+        <guest>
+            <name>Shadow</name>
+            <email>shadow@example.com</email>
+            <phone>9826****</phone>
+        </guest>
+        <stay>
+            <room_no>108</room_no>
+            <checkin>2025-01-30</checkin>
+            <checkout>2025-02-01</checkout>
+        </stay>
+        <ratings>
+            <cleanliness>7</cleanliness>
+            <food>9</food>
+            <service>8</service>
+            <overall>8</overall>
+        </ratings>
+        <comments>Food was great, but room lighting could be better.</comments>
+    </feedback>
+    
+    <feedback id="F003" date="2025-03-05">
+        <guest>
+            <name>Person 1</name>
+            <email>person@example.com</email>
+            <phone>43543****</phone>
+        </guest>
+        <stay>
+            <room_no>315</room_no>
+            <checkin>2025-03-02</checkin>
+            <checkout>2025-03-05</checkout>
+        </stay>
+        <ratings>
+            <cleanliness>6</cleanliness>
+            <food>7</food>
+            <service>7</service>
+            <overall>7</overall>
+        </ratings>
+        <comments>Decent stay. Needs improvement in room service timing.</comments>
+    </feedback>
+    
+</feedbacks>

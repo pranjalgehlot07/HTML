@@ -1,0 +1,23 @@
+<!ELEMENT feedbacks (feedback+)>
+<!ELEMENT feedback (guest, stay, ratings, comments)>
+<!ATTLIST feedback
+id CDATA #REQUIRED
+date CDATA #REQUIRED>
+
+<!ELEMENT guest (name, email, phone)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT email (#PCDATA)>
+<!ELEMENT phone (#PCDATA)>
+
+<!ELEMENT stay (room_no, checkin, checkout)>
+<!ELEMENT room_no (#PCDATA)>
+<!ELEMENT checkin (#PCDATA)>
+<!ELEMENT checkout (#PCDATA)>
+
+<!ELEMENT ratings (cleanliness, food, service, overall)>
+<!ELEMENT cleanliness (#PCDATA)>
+<!ELEMENT food (#PCDATA)>
+<!ELEMENT service (#PCDATA)>
+<!ELEMENT overall (#PCDATA)>
+
+<!ELEMENT comments (#PCDATA)>
